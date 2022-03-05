@@ -119,6 +119,22 @@ function guess(btn){
   }
   
   // add game logic here
+  if(pattern[guessCounter] == btn){
+    //Correct guess
+    if(guessCounter == progress){
+      if(progress == pattern.length - 1){
+        winGame(); //Game won
+      }else{
+        //Pattern was correct, next segment is added
+        ++progress;
+        playClueSequence();
+      }
+    }else{
+      ++guessCounter; 
+    }
+  }else{
+    loseGame(); //Game lost
+  }
 }
 
 function loseGame(){
