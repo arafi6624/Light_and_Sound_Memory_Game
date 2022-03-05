@@ -54,19 +54,19 @@ button{
   background: #143642;
 }
 
-#btn1:active{
+#btn1:active, #btn1.lit{
   background: lightgreen;
 }
 
-#btn2:active{
+#btn2:active, #btn2.lit{
   background: #CAA5C5;
 }
 
-#btn3:active{
+#btn3:active, #btn3.lit{
   background: #DB876B;
 }
 
-#btn4:active{
+#btn4:active, #btn4.lit{
   background: teal;
 }
 
