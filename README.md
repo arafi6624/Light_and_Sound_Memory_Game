@@ -1,10 +1,10 @@
-# Pre-work - *Memory Game*
+# Pre-work - The Tiles and Sound game
 
-**Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
+The Tiles and Sound Game is a Light & Sound Memory game to apply for CodePath's SITE Program. 
 
 Submitted by: Abdul Rafi
 
-Time spent: 2.5 hours spent in total
+Time spent: 3 hours spent in total
 
 Link to project: https://glitch.com/edit/#!/achieved-island-end
 
