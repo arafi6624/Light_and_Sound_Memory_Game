@@ -32,19 +32,35 @@ button{
   display: none;
 }
 
-#button1{
-    background: lightgreen;
+#btn1{
+  background: #058C42;
 }
 
-#button2{
-    background: lightgreen;
+#btn2{
+  background: #AE76A6;
 }
 
-#button3{
-    background: lightgreen;
+#btn3{
+  background: #B54E2C;
 }
 
-#button1 {
-    background: lightgreen;
+#btn4{
+  background: #143642;
+}
+
+#btn1:active{
+  background: lightgreen;
+}
+
+#btn2:active{
+  background: #CAA5C5;
+}
+
+#btn3:active{
+  background: #DB876B;
+}
+
+#btn4:active{
+  background: teal;
 }
 
