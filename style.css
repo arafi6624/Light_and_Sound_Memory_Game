@@ -1,8 +1,13 @@
 body{
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
+  text-align: center;
   background-color: #A8DADC;
   color: #264653; 
+}
+
+p{
+  line-height: 1.5em;
 }
 
 .title{
@@ -26,6 +31,7 @@ button{
   width:200px;
   height:200px;
   margin:2px;
+  margin-top: 50px;
 }
 
 .hidden{
