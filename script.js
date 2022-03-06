@@ -1,6 +1,5 @@
 // global constants
 const clueHoldTime = 1000; //how long to hold each clue's light/sound
-const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 
@@ -11,6 +10,7 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5; //must be between 0.0 and 1.0
 var guessCounter = 0;
+var cluePauseTime = 333; //how long to pause in between clues
 
 function generatePattern(){
   for (let i = 0; i < 8; ++i){
@@ -21,8 +21,8 @@ function generatePattern(){
 function startGame(){
   //initialize game variables
   progress = 0;
-  cluePauseTime = 333;
   gamePlaying = true;
+  cluePauseTime = 333;
   generatePattern();
   
   //swap the Start and Stop buttons
@@ -43,10 +43,10 @@ function stopGame(){
 
 // Sound Synthesis Functions
 const freqMap = {
-  1: 220,
-  2: 415.3,
-  3: 587.33,
-  4: 739.99
+  1: 261.6,
+  2: 329.6,
+  3: 392,
+  4: 466.2
 }
 
 function playTone(btn,len){ 
