@@ -23,12 +23,12 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 
 * [x] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
-* [ ] Buttons use a pitch (frequency) other than the ones in the tutorial
-* [ ] More than 4 functional game buttons
-* [ ] Playback speeds up on each turn
+* [x] Buttons use a pitch (frequency) other than the ones in the tutorial
+* [x] More than 4 functional game buttons
+* [x] Playback speeds up on each turn
 * [x] Computer picks a different pattern each time the game is played
 * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
-* [ ] Game button appearance change goes beyond color (e.g. add an image)
+* [x] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
 
@@ -46,9 +46,10 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+- I used the HTML reference page on w3schools (https://www.w3schools.com/html/html_attributes.asp), color pallet from coolors (https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51), 
+  MDN Web Docs for JS reference and do 
 
-2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
+ote frequency values frommarcgg blog (https://marcgg.com/blog/2016/11/01/javascript-audio/),  2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 [YOUR ANSWER HERE]
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
@@ -78,4 +79,4 @@ If you recorded multiple GIFs for all the implemented features, you can add them
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
-    limitations under the License.
+    limitations under the License.N
