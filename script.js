@@ -11,6 +11,7 @@ var volume = 0.5; //must be between 0.0 and 1.0
 var guessCounter = 0;
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
 var cluePauseTime = 333; //how long to pause in between clues
+var mistakes = 0;
 
 function generatePattern(){
   for (let i = 0; i < 8; ++i){
@@ -24,6 +25,7 @@ function startGame(){
   gamePlaying = true;
   cluePauseTime = 333;
   clueHoldTime = 1000;
+  mistakes = 0;
   generatePattern();
   
   //swap the Start and Stop buttons
@@ -142,8 +144,11 @@ function guess(btn){
     }else{
       ++guessCounter; 
     }
+  }else if(mistakes < 3){
+    ++mistakes;
+    alert("You have " + (3-mistakes) + " attempts remaining!")
   }else{
-    loseGame(); //Game lost
+    loseGame();
   }
 }
 
