@@ -59,7 +59,7 @@ button{
 }
 
 #btn1:active, #btn1.lit{
-  background: lightgreen;
+  background: #3A6B7E;
 }
 
 #btn2:active, #btn2.lit{
