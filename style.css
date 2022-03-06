@@ -39,19 +39,23 @@ button{
 }
 
 #btn1{
-  background: #058C42;
+  background: #264653;
 }
 
 #btn2{
-  background: #AE76A6;
+  background: #2A9D8F;
 }
 
 #btn3{
-  background: #B54E2C;
+  background: #E9C46A;
 }
 
 #btn4{
-  background: #143642;
+  background: #F4A261;
+}
+
+#btn5{
+  background: #E76F51;
 }
 
 #btn1:active, #btn1.lit{
