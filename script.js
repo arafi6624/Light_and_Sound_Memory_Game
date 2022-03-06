@@ -14,7 +14,7 @@ var cluePauseTime = 333; //how long to pause in between clues
 
 function generatePattern(){
   for (let i = 0; i < 8; ++i){
-  pattern[i] = Math.floor(Math.random() * (4 - 1 + 1) + 1);
+  pattern[i] = Math.floor(Math.random() * (5 - 1 + 1) + 1); //Generates a random number between 1 and 5 and stores it in the i-th elemenent of pattern
   }
 }
 
@@ -44,10 +44,11 @@ function stopGame(){
 
 // Sound Synthesis Functions
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2
+  1: 246.94,
+  2: 349.23,
+  3: 440,
+  4: 554.37,
+  5: 659.26
 }
 
 function playTone(btn,len){ 
@@ -129,8 +130,13 @@ function guess(btn){
       }else{
         //Pattern was correct, next segment is added
         ++progress;
-        cluePauseTime -= 50; //Clue pause time is decremented after each successful level
-        clueHoldTime -= 100; //Clue hold time is decremented after each successful level
+        if(cluePauseTime > 150){
+          cluePauseTime -= 50; //Clue pause time is decremented after each successful level if it's above 150
+        }
+        if(clueHoldTime > 300){
+          clueHoldTime -= 75; //Clue hold time is decremented after each successful level if it's above 300
+        }
+  
         playClueSequence();
       }
     }else{

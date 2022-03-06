@@ -63,14 +63,18 @@ button{
 }
 
 #btn2:active, #btn2.lit{
-  background: #CAA5C5;
+  background: #3ECCBB;
 }
 
 #btn3:active, #btn3.lit{
-  background: #DB876B;
+  background: #F2DCA6;
 }
 
 #btn4:active, #btn4.lit{
-  background: teal;
+  background: #F8C8A0;
+}
+
+#btn5:active, #btn5.lit{
+  background: #F0A693;
 }
 
