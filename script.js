@@ -21,6 +21,7 @@ function generatePattern(){
 function startGame(){
   //initialize game variables
   progress = 0;
+  cluePauseTime = 333;
   gamePlaying = true;
   generatePattern();
   
@@ -42,10 +43,10 @@ function stopGame(){
 
 // Sound Synthesis Functions
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2
+  1: 220,
+  2: 415.3,
+  3: 587.33,
+  4: 739.99
 }
 
 function playTone(btn,len){ 
