@@ -1,5 +1,7 @@
 // global constants
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
+const time = 20;
+const timerEl = document.getElementById('timer');
 
 
 //global variables
@@ -33,6 +35,14 @@ function startGame(){
   document.getElementById("stopBtn").classList.remove("hidden");
   
   playClueSequence();
+}
+
+setInterval(updateCountdown, 1000);
+
+function updateCountdown(){
+  let seconds = time;
+  timerEl.innerHTML = '0:${seconds}';
+  --time;
 }
 
 function stopGame(){
@@ -163,4 +173,6 @@ function winGame(){
   stopGame();
   alert("You won!")
 }
+
+
 
