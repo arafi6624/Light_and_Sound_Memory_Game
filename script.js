@@ -6,19 +6,25 @@ const nextClueWaitTime = 1000; // How long to wait before starting playback of t
 var pattern = []; 
 var progress = 0;
 var gamePlaying = false;
-var tonePlaying = false;
+var tonePlaying = false; 
 var volume = 0.5; // Must be between 0.0 and 1.0
-var guessCounter = 0; //Counts the 
+var guessCounter = 0; //Counts the number of correct guesses
 var clueHoldTime = 1000; // How long to hold each clue's light/sound
 var cluePauseTime = 333; // How long to pause in between clues
 var attempts = 0; // Counts the number of attempts 
 
+/**
+* Generates a new random pattern for each game
+*/
 function generatePattern(){
   for (let i = 0; i < 8; ++i){
   pattern[i] = Math.floor(Math.random() * (5 - 1 + 1) + 1); //Generates a random number between 1 and 5 and stores it in the i-th elemenent of pattern
   }
 }
 
+/**
+* Initializes the game variables and starts the game
+*/
 function startGame(){
   //initialize game variables
   progress = 0;
@@ -35,7 +41,9 @@ function startGame(){
   playClueSequence();
 }
 
-
+/**
+* Stops the game
+*/
 function stopGame(){
   //initialize game variables
   gamePlaying = false;
@@ -54,6 +62,9 @@ const freqMap = {
   5: 659.26
 }
 
+/**
+* Plays a tone
+*/
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
   g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
@@ -64,6 +75,9 @@ function playTone(btn,len){
   },len)
 }
 
+/**
+* Starts the tone 
+*/
 function startTone(btn){
   if(!tonePlaying){
     context.resume()
@@ -74,6 +88,9 @@ function startTone(btn){
   }
 }
 
+/**
+* Stops the tone
+*/
 function stopTone(){
   g.gain.setTargetAtTime(0,context.currentTime + 0.05,0.025)
   tonePlaying = false
@@ -90,14 +107,23 @@ g.gain.setValueAtTime(0,context.currentTime)
 o.connect(g)
 o.start(0)
 
+/**
+* Lights up the buttons by changing its color
+*/
 function lightButton(btn){
   document.getElementById("btn"+btn).classList.add("lit")
 }
 
+/**
+* Changes the button's color to original
+*/
 function clearButton(btn){
   document.getElementById("btn"+btn).classList.remove("lit")
 }
 
+/**
+* Plays a single clue
+*/
 function playSingleClue(btn){
   if(gamePlaying){
     lightButton(btn);
@@ -106,6 +132,9 @@ function playSingleClue(btn){
   }
 }
 
+/**
+* Plays a sequence of clues based on the pattern and level of progress
+*/
 function playClueSequence(){
   context.resume()
   guessCounter = 0;
@@ -118,6 +147,9 @@ function playClueSequence(){
   }
 }
 
+/**
+* Takes in 
+*/
 function guess(btn){
   console.log("user guessed: " + btn);
   if(!gamePlaying){
