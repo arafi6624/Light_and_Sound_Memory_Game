@@ -1,6 +1,5 @@
 // global constants
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
-const time = 20;
 const timerEl = document.getElementById('timer');
 
 
@@ -14,6 +13,7 @@ var guessCounter = 0;
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
 var cluePauseTime = 333; //how long to pause in between clues
 var attempts = 0;
+var time = 20;
 
 function generatePattern(){
   for (let i = 0; i < 8; ++i){
@@ -40,8 +40,10 @@ function startGame(){
 setInterval(updateCountdown, 1000);
 
 function updateCountdown(){
-  let seconds = time;
-  timerEl.innerHTML = '0:${seconds}';
+  timerEl.innerHTML = `0:${time}`;
+  if(time == 0){
+    
+  }
   --time;
 }
 
