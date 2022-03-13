@@ -37,15 +37,16 @@ function startGame(){
   playClueSequence();
 }
 
-setInterval(updateCountdown, 1000);
 
-function updateCountdown(){
+function timer(){
   timerEl.innerHTML = `0:${time}`;
-  if(time == 0){
-    
-  }
   --time;
+  if(timer == 0){
+    clearInterval(timer());
+  }
 }
+
+setInterval(timer(),1000);
 
 function stopGame(){
   //initialize game variables
