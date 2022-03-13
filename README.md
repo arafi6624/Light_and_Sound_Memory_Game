@@ -4,7 +4,7 @@ The Tiles and Sound Game is a Light & Sound Memory game to apply for CodePath's 
 
 Submitted by: Abdul Rafi
 
-Time spent: 3 hours spent in total
+Time spent: 6 hours spent in total
 
 Link to project: https://glitch.com/edit/#!/achieved-island-end
 
