@@ -38,15 +38,16 @@ function startGame(){
 }
 
 
-function timer(){
-  timerEl.innerHTML = `0:${time}`;
-  --time;
-  if(timer == 0){
-    clearInterval(timer());
+var timer = setInterval(function(){
+  timerEl.innerHTML= `0:$`;
+  count--;
+  if (count === 0){
+    clearInterval(interval);
+    document.getElementById('count').innerHTML='Done';
+    // or...
+    alert("You're out of time!");
   }
-}
-
-setInterval(timer(),1000);
+}, 1000);
 
 function stopGame(){
   //initialize game variables
