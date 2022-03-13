@@ -193,16 +193,16 @@ function guess(btn){
 * Stops the game if the game is lost and alerts the user.
 */
 function loseGame(){
-  stopGame(); 
-  alert("Game Over. You lost.");
+  stopGame(); // Stops the game.
+  alert("Game Over. You lost."); // Alerts the user that the game is lost.
 }
 
 /**
 * Stops the game if the user won and alerts the user.
 */
 function winGame(){
-  stopGame();
-  alert("You won!")
+  stopGame(); // Stops the game.
+  alert("You won!") // Alerts the user that the game was won.
 }
 
 
