@@ -1,19 +1,17 @@
-// global constants
-const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
-const timerEl = document.getElementById('timer');
+// Global constants
+const nextClueWaitTime = 1000; // How long to wait before starting playback of the clue sequence
 
 
-//global variables
-var pattern = [];
+// Global variables
+var pattern = []; 
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
-var volume = 0.5; //must be between 0.0 and 1.0
-var guessCounter = 0;
-var clueHoldTime = 1000; //how long to hold each clue's light/sound
-var cluePauseTime = 333; //how long to pause in between clues
-var attempts = 0;
-var time = 29;
+var volume = 0.5; // Must be between 0.0 and 1.0
+var guessCounter = 0; //Counts the 
+var clueHoldTime = 1000; // How long to hold each clue's light/sound
+var cluePauseTime = 333; // How long to pause in between clues
+var attempts = 0; // Counts the number of attempts 
 
 function generatePattern(){
   for (let i = 0; i < 8; ++i){
