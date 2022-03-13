@@ -13,7 +13,7 @@ var guessCounter = 0;
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
 var cluePauseTime = 333; //how long to pause in between clues
 var attempts = 0;
-var time = 20;
+var time = 29;
 
 function generatePattern(){
   for (let i = 0; i < 8; ++i){
@@ -37,17 +37,6 @@ function startGame(){
   playClueSequence();
 }
 
-
-var timer = setInterval(function(){
-  timerEl.innerHTML= `0:$`;
-  count--;
-  if (count === 0){
-    clearInterval(interval);
-    document.getElementById('count').innerHTML='Done';
-    // or...
-    alert("You're out of time!");
-  }
-}, 1000);
 
 function stopGame(){
   //initialize game variables
