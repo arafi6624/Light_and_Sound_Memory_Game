@@ -41,7 +41,7 @@ Start and stop:
 ![](Game_Lost_Small3.gif)
 
 Full game won:
-![](Game_Won.gif)
+![](Game_Won_Small.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
