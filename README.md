@@ -35,13 +35,13 @@ The following **optional** features are implemented:
 ## Video Walkthrough (GIF)
 
 Start and stop:
-![](https://i.imgur.com/MDuesrr.gif)
+![](Start_Stop_Small.gif)
 
 3 attempts and game lost:
-![](https://i.imgur.com/KgYP7I5.gif)
+![](Game_Lost_Small3.gif)
 
 Full game won:
-![](https://i.imgur.com/CyM9uhC.gif)
+![](Game_Won.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
