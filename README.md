@@ -23,13 +23,13 @@ Link to project: https://glitch.com/edit/#!/achieved-island-end
 
 ## Video Walkthrough (GIF)
 
-###Start and stop:
+### Start and stop:
 ![](Start_Stop_Small.gif)
 
-###3 attempts and game lost:
+### 3 attempts and game lost:
 ![](Game_Lost_Small3.gif)
 
-###Full game won:
+### Full game won:
 ![](Game_Won_Small.gif)
 
 
