@@ -1,16 +1,10 @@
 # The Tiles and Sound game
 
-The Tiles and Sound Game is a Light & Sound Memory game used to apply for CodePath's SITE Program. 
-
-Submitted by: Abdul Rafi
-
-Time spent: 9 hours spent in total
+The Tiles and Sound Game is a game used to test memory of a person using light and sound.
 
 Link to project: https://glitch.com/edit/#!/achieved-island-end
 
 ## Required Functionality
-
-The following **required** functionality is complete:
 
 * [x] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
 * [x] "Start" button toggles between "Start" and "Stop" when clicked. 
@@ -19,9 +13,6 @@ The following **required** functionality is complete:
 * [x] Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess. 
 * [x] User wins the game after guessing a complete pattern
 * [x] User loses the game after an incorrect guess
-
-The following **optional** features are implemented:
-
 * [x] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [x] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [x] More than 4 functional game buttons
@@ -29,8 +20,6 @@ The following **optional** features are implemented:
 * [x] Computer picks a different pattern each time the game is played
 * [x] Player only loses after 3 mistakes (instead of on the first mistake)
 * [x] Game button appearance change goes beyond color (e.g. add an image)
-* [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
-* [ ] User has a limited amount of time to enter their guess on each turn
 
 ## Video Walkthrough (GIF)
 
