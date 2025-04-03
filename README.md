@@ -4,7 +4,7 @@ The Tiles and Sound Game is a game used to test memory of a person using light a
 
 Link to project: https://glitch.com/edit/#!/achieved-island-end
 
-## Required Functionality
+## Functionality
 
 * [x] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
 * [x] "Start" button toggles between "Start" and "Stop" when clicked. 
@@ -23,13 +23,13 @@ Link to project: https://glitch.com/edit/#!/achieved-island-end
 
 ## Video Walkthrough (GIF)
 
-Start and stop:
+###Start and stop:
 ![](Start_Stop_Small.gif)
 
-3 attempts and game lost:
+###3 attempts and game lost:
 ![](Game_Lost_Small3.gif)
 
-Full game won:
+###Full game won:
 ![](Game_Won_Small.gif)
 
 
